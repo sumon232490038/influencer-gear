@@ -1,0 +1,114 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* INTER FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+  }
+/* _____________________________________________________________________ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins"
+ 
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/* SHARED CSS STYLE */
+.display-flex {
+    display: flex;
+
+}
+
+
+/* HEADER SECTION CSS */
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* nav section css style  */
+
+#menu-icon {
+    display: none;
+}
+
+.nav {
+    justify-content: space-between;
+    margin-top: 50px;
+    
+    
+}
+.Influencer-logo {
+    font-size: 1.5rem;
+    color:rgba(58, 58, 58, 1) ;
+    font-weight: bold;
+    margin-top: -7px;
+}
+.nav-links {
+    gap: 34px;
+    display: flex;
+
+}
+
+.li-item {
+    list-style: none;
+}
+.nav-ber-btn {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+   
+}
+#shopping-icon {
+    display: none;
+}
+.research-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+/* MEDINA QUERY SECTION ------------------------------------*/
+
+
+/* SMALL DEVICE RESPON SIVE */
+@media screen and (max-width:576px) {
+    #nav-items {
+        display:none;
+    }
+
+    #menu-icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #shopping-icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+    }
+
+    .Influencer-logo {
+        font-size: 1rem;
+        margin-top: 2px;
+    }
+    
+}
