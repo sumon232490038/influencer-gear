@@ -18,11 +18,13 @@
 /* _____________________________________________________________________ */
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     font-family: "Poppins"
  
 }
+
+
 
 /* ------------------------------------------------------------------------------------- */
 
@@ -30,6 +32,10 @@
 .display-flex {
     display: flex;
 
+}
+main {
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 
@@ -112,6 +118,134 @@ max-width: 540px;
     margin-top: 30px;
 }
 
+.banner-img {
+    background-image: url(images/Circle\ design.svg);
+}
+
+/* THIS IS SPONSOR SECTION */
+
+.sponsor-container {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border-top: 0.5px solid rgba(99, 97, 97, 0.123);
+    border-bottom: 0.5px solid rgba(99, 97, 97, 0.123);
+    padding: 30px 0px 30px 0px;
+    
+}
+
+/* popular collection section css */
+.p-c-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.popular-collection-cards {
+   display: grid;
+   grid-template-columns:repeat(3,1fr);
+   gap: 15px;
+   /* padding: 20px; */
+   /* border: 2px solid red; */
+   justify-content: center;
+   margin: 0 auto;
+   
+}
+.cards-parents {
+    width: 330px;
+    padding: 17px; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+ 
+}
+.cards-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: rgba(24, 25, 31, 1);
+}
+.cards-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+}
+.cards-descrip {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(120, 120, 133, 1);
+}
+
+.fratured-products-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top:140px ;
+    gap: 90px;
+}
+
+.featured-description {
+    color: rgba(108, 108, 108, 1);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.featured-products-title{
+    color: rgba(10, 8, 38, 1);
+    font-size: 2.35rem;
+    font-weight: bold;
+}
+
+
+.featured-products-parent {
+    
+    
+}
+
+.btn-praimary {
+ background-color: rgba(224, 44, 109, 1);
+ color: rgba(255, 255, 255, 1);
+ padding: 10px 30px;
+ border-radius: 0;
+ border: none;
+
+}
+/* footer section css */
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    color:rgba(255, 255, 255, 1);
+    margin-top: 100px;
+    height: 230px ;
+    width: 1440px;
+    background-color: rgba(10, 8, 38, 1);
+    text-align: center;
+    align-content: center;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: rgba(217, 219, 225, 1);
+    margin-top: 10px;
+}
+
+.social-links  {
+    margin-top: 10px;
+}
+
+
+
+
 /* MEDINA QUERY SECTION ------------------------------------*/
 
 
@@ -149,13 +283,13 @@ max-width: 540px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column-reverse;
     }
-    .banner-parent-container {
-       flex-direction: column-reverse;
-    }
+   
     .banner-img {
         width: 70%;
         height: 70%;
+       
     }
     .banner-img img{
         width: 100%;
@@ -176,9 +310,39 @@ max-width: 540px;
             
         
         }
-    
+
 
     
+/*  this sponsor responsive */
+.sponsor-container {
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 10px;
+    margin-top: 50px;
+}
 
+.popular-collection-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+
+ .fratured-products-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    
+}
+ .fratured-products-container img{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+
+    width: 100vw;
+}
         
 }
